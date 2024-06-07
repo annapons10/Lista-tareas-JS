@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Lista de tareas</title>
+</head>
+<body>
+
+    <h1>TAREAS</h1>
+
+
+            <div class="container__tareas">
+                <div class="container__nuevaTarea">
+                <input type="text" name="tarea" id="nuevaTarea" placeholder="Ingrese una nueva tarea">
+                <button onclick="agregarTarea()"> Agregar Tarea</button> <!--se pone aqui el onclick?-->
+                </div>
+    
+                <div class="container__lista">
+                    <ul id="listaTareas">
+               
+                    </ul>
+                </div>
+
+                <div id="botonesContainer" class="botonesContainer2">
+                    <!-- Aquí se agregarán los botones dinámicamente -->
+                </div>
+               
+            
+
+            </div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

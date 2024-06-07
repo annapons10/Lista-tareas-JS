@@ -1,0 +1,154 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: #000;
+    user-select: none;
+}
+
+h1 {
+    color: #38e;
+    font-size: 2.5rem;
+    text-align: center;
+    
+}
+
+
+.container__tareas {
+    text-align: center;
+    margin: auto;
+
+}
+
+
+.container__nuevaTarea {
+    background-color: #01395e;
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.container__nuevaTarea input, button{
+    text-align: center; 
+    width: 90%;
+    background-color: #6da0dd;
+    margin: 0.8rem;
+    border: 2px solid #4c81bf; /* Borde sólido con un color ligeramente más oscuro */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 18px; /* Tamaño de la fuente */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    transition: all 0.3s ease; /j* Transición suave para los cambios */
+    
+}
+
+.container__nuevaTarea button{
+    width: 45%;
+}
+
+.container__tareas input {
+    outline: none;
+    border: none; /* Sin borde por defecto */
+    padding: 10px; /* Relleno para mejorar la apariencia */
+    font-size: 16px; /* Tamaño de la fuente */
+    margin-right: 1.5rem;
+}
+
+.container__tareas input::placeholder{
+    color: #000000;
+}
+
+.container__tareas button {
+    color: #000;
+    outline: none;
+    border: none; /* Sin borde por defecto */
+    padding: 10px; /* Relleno para mejorar la apariencia */
+    font-size: 16px; /* Tamaño de la fuente */
+    border-radius: 10px;
+}
+
+input:focus, button:focus {
+    outline: none; /* Sin borde al estar enfocado */
+    box-shadow: 0 0 5px rgb(148, 181, 248), 0 0 10px rgb(140, 192, 252); /* Sombra más intensa al estar enfocado */
+}
+
+button:hover {
+    outline: none; /* Sin borde al estar enfocado */
+    box-shadow: 0 0 5px rgb(148, 181, 248), 0 0 10px rgb(140, 192, 252); /* Sombra más intensa al estar enfocado */
+}
+
+
+.container__lista ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    background-color: #01395e;
+   
+} 
+
+.container__lista ul li{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+    margin-top: 5px;
+    font-size: 2rem;
+    white-space: pre-wrap;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    transition: opacity 0.5s ease; /* Agrega una transición de opacidad */
+
+}
+
+
+.container__tareas .buton-eliminar {
+   width: 5rem;
+   margin:10px auto 10px auto;
+}
+
+.buton-eliminar:focus {
+    outline: none; /* Sin borde al estar enfocado */
+    box-shadow: 0 0 5px rgb(148, 181, 248), 0 0 15px rgb(140, 192, 252); /* Sombra más intensa al estar enfocado */
+}
+
+
+@media (min-width: 600px) {
+
+
+    .container__tareas {
+        max-width: 70%;
+        text-align: center;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .container__nuevaTarea {
+        background-color: #01395e;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container__lista ul li{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        color: #000000;
+        margin-top: 5px;
+        font-size: 2rem;
+        white-space: pre-wrap;
+        overflow: hidden;
+        overflow-wrap: break-word;
+        transition: opacity 0.5s ease; /* Agrega una transición de opacidad */
+    
+    }
+}
